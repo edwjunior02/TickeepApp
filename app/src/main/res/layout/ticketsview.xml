@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="92dp"
+            android:layout_height="91dp"
+            android:src="@drawable/tickettemplate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_ticketname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/ticket_name"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_ticketdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="33dp"
+            android:text="@string/date"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/txt_ticketname" />
+
+        <TextView
+            android:id="@+id/txt_ticketdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/description"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/txt_ticketdate" />
+
+        <TextView
+            android:id="@+id/txt_ticketstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/status"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_ticketname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEdit_ticketdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="33dp"
+            android:text="TextView"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_ticketdate"
+            app:layout_constraintTop_toTopOf="@+id/txt_ticketname" />
+
+        <TextView
+            android:id="@+id/txtEdit_ticketdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="26dp"
+            android:text="TextView"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_ticketdescription"
+            app:layout_constraintTop_toTopOf="@+id/txtEdit_ticketdate" />
+
+        <TextView
+            android:id="@+id/txtEdit_ticketstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_ticketstatus"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/status_green"
+            app:layout_constraintStart_toStartOf="@+id/txtEdit_ticketdate"
+            app:layout_constraintTop_toTopOf="@+id/txtEdit_ticketstatus" />
+
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_status"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageButton
+                android:id="@+id/imgBtn_favourite"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_favorite"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_important"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_baseline_notification_important_24"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
